@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fuzzbuzz-dev-135745-authRole",
+      "UnauthRoleArn": "arn:aws:iam::244676165440:role/amplify-fuzzbuzz-dev-135745-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::244676165440:role/amplify-fuzzbuzz-dev-135745-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-fuzzbuzz-dev-135745-deployment",
+      "UnauthRoleName": "amplify-fuzzbuzz-dev-135745-unauthRole",
+      "StackName": "amplify-fuzzbuzz-dev-135745",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:244676165440:stack/amplify-fuzzbuzz-dev-135745/c04bf320-41e2-11ec-9666-0a5ecbc17478",
+      "AmplifyAppId": "d3m87pupnu8nw"
+    },
+    "categories": {
+      "auth": {
+        "fuzzbuzz411a0a15": {}
+      }
+    }
+  }
+}
