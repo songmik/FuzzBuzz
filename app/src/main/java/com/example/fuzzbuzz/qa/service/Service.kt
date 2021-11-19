@@ -10,7 +10,11 @@ import retrofit2.http.Query
 interface Service {
 
     @FormUrlEncoded
-    @POST("/app_faq/")
+    @POST("/app-faq/")
     fun getObject(@Field("idx")idx : String): Call<Response>
+
+    @FormUrlEncoded
+    @POST("/app-con/")
+    fun getCon(@Field("idx")idx : String): Call<Response>
 
 }

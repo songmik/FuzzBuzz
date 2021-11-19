@@ -1,8 +1,10 @@
 package com.example.fuzzbuzz
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.content.ContextCompat
 import com.example.fuzzbuzz.qa.service.Response
 import com.example.fuzzbuzz.qa.service.Service
 import kotlinx.android.synthetic.main.activity_congestion.*
@@ -20,19 +22,29 @@ class Congestion : AppCompatActivity() {
 
         val retrofit = Retrofit.Builder()
             //서버에 맞게 주소를 계속 변경해 줌
-            .baseUrl("http://52.78.225.52:8000")
+            .baseUrl("http://13.125.27.159:8000")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
         val service = retrofit.create(Service::class.java)
 
-        service.getObject("2")?.enqueue(object: Callback<Response> {
+        service.getCon("concon")?.enqueue(object: Callback<Response> {
             override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
-//                val qtext = response.body()?.Q_text
-                val atext = response.body()?.A_text
+                val input_time = response.body()?.input_time
+                val value = response.body()?.value
 
-//                textView20.text = qtext.toString()
-                textView2.text = atext.toString()
+                textView2.text = value.toString()
+                textView36.text = input_time.toString()
+
+                if (value != null) {
+                    if (value>0 && value <=39){
+                        textView2.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.YellowGreen))
+                    }else if (value>=40 && value>=69){
+                        textView2.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.Gold))
+                    }else{
+                        textView2.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.Firebrick))
+                    }
+                }
             }
 
             override fun onFailure(call: Call<Response>, t: Throwable) {

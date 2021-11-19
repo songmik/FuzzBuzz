@@ -14,10 +14,11 @@ class Settings : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
+        // ID or 닉네임이 textView에 보이기 위한 함수
         auth = AWSMobileClient.getInstance()
+        textView18.text = auth.username.toString()
 
-        textView18.text = auth.toString()
-
+        // 로그아웃 버튼 생성
         button5.setOnClickListener{
             auth.signOut()
             val logout = Intent(this, Aws::class.java)

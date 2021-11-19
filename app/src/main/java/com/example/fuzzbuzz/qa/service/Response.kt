@@ -9,5 +9,13 @@ data class Response(
     val Q_text:String,
 
     @SerializedName("A_text")
-    val A_text:String
+    val A_text:String,
+
+    @SerializedName("input_time")
+    val input_time:String,
+
+    @SerializedName("value")
+    val value:Int
+
+
 )

@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.125" />
 
     <TextView
         android:id="@+id/textView5"
@@ -132,7 +132,7 @@
         app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintVertical_bias="0.121"
         app:srcCompat="@drawable/robot1" />
 
     <ImageView
@@ -141,10 +141,10 @@
         android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintVertical_bias="0.121"
         app:srcCompat="@drawable/robot1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

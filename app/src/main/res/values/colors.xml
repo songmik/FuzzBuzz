@@ -12,4 +12,8 @@
     <color name="YellowGreen">#FF9ACD32</color>
     <color name="LightSkyBlue">#FF87CEFA</color>
     <color name="LightSteelBlue">#FFB0C4DE</color>
+    <color name="LightGreen">#FF90EE90</color>
+    <color name="Gold">#FFFFD700</color>
+    <color name="Firebrick">#FFB22222</color>
+
 </resources>

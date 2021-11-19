@@ -24,7 +24,7 @@ class QA : AppCompatActivity() {
 
         val retrofit = Retrofit.Builder()
                 //서버에 맞게 주소를 계속 변경해 줌
-            .baseUrl("http://52.78.225.52:8000")
+            .baseUrl("http://13.125.27.159:8000")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -50,7 +50,7 @@ class QA : AppCompatActivity() {
             }
         })
 
-        service.getObject("3").enqueue(object:Callback<Response>{
+        service.getObject("4").enqueue(object:Callback<Response>{
             override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
                 val qtext = response.body()?.Q_text
                 textView11.text = qtext.toString()
@@ -60,7 +60,7 @@ class QA : AppCompatActivity() {
             }
         })
 
-        service.getObject("4").enqueue(object:Callback<Response>{
+        service.getObject("5").enqueue(object:Callback<Response>{
             override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
                 val qtext = response.body()?.Q_text
                 textView12.text = qtext.toString()
@@ -69,8 +69,6 @@ class QA : AppCompatActivity() {
                 Log.d("","")
             }
         })
-
-
 
 
         // textView 클릭 이벤트
