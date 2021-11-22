@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         button2.setOnClickListener {
-            val graph = Intent(this, Graph::class.java)
+            val graph = Intent(this, Chart::class.java)
             startActivity(graph)
         }
 
