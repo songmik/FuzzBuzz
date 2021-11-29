@@ -39,9 +39,9 @@ class Congestion : AppCompatActivity() {
                 textView36.text = input_time.toString()
 
                 if (value != null) {
-                    if (value>=0.0 && value <=39.9){
+                    if (value>= 0.0.toString() && value <=39.9.toString()){
                         textView2.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.YellowGreen))
-                    }else if (value>=40.0 && value>=69.9){
+                    }else if (value>=40.0.toString() && value>=69.9.toString()){
                         textView2.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.Gold))
                     }else{
                         textView2.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.Firebrick))

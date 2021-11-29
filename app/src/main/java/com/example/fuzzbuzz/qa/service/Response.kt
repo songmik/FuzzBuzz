@@ -15,7 +15,7 @@ data class Response(
     val input_time:String,
 
     @SerializedName("value")
-    val value:Int
+    val value:String
 
 
 )
