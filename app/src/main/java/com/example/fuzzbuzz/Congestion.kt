@@ -1,9 +1,11 @@
 package com.example.fuzzbuzz
 
+import android.content.Context
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.fuzzbuzz.qa.service.Response
 import com.example.fuzzbuzz.qa.service.Service
@@ -22,7 +24,7 @@ class Congestion : AppCompatActivity() {
 
         val retrofit = Retrofit.Builder()
             //서버에 맞게 주소를 계속 변경해 줌
-            .baseUrl("http://13.125.27.159:8000")
+            .baseUrl("http://3.38.98.137:8000")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -37,9 +39,9 @@ class Congestion : AppCompatActivity() {
                 textView36.text = input_time.toString()
 
                 if (value != null) {
-                    if (value>0 && value <=39){
+                    if (value>=0.0 && value <=39.9){
                         textView2.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.YellowGreen))
-                    }else if (value>=40 && value>=69){
+                    }else if (value>=40.0 && value>=69.9){
                         textView2.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.Gold))
                     }else{
                         textView2.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.Firebrick))
@@ -52,5 +54,6 @@ class Congestion : AppCompatActivity() {
             }
 
         })
+
     }
 }

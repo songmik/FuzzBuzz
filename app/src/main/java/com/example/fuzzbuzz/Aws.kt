@@ -11,17 +11,15 @@ class Aws : AppCompatActivity() {
         setContentView(R.layout.activity_aws)
 
         AWSMobileClient.getInstance().initialize(this, object: Callback<UserStateDetails>{
-            override fun onResult(result: UserStateDetails?) {
-                when (result?.getUserState()) {
-                    UserState.SIGNED_IN -> {
-                        val i = Intent(this@Aws, MainActivity::class.java)
-                        startActivity(i)
-                    }
-                    UserState.SIGNED_OUT -> showSignIn()
-                    else -> {
-                        AWSMobileClient.getInstance().signOut()
-                        showSignIn()
-                    }
+            override fun onResult(result: UserStateDetails?) = when (result?.getUserState()) {
+                UserState.SIGNED_IN -> {
+                    val i = Intent(this@Aws, MainActivity::class.java)
+                    startActivity(i)
+                }
+                UserState.SIGNED_OUT -> showSignIn()
+                else -> {
+                    AWSMobileClient.getInstance().signOut()
+                    showSignIn()
                 }
             }
 

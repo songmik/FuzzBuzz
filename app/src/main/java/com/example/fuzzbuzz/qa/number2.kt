@@ -22,7 +22,7 @@ class number2 : AppCompatActivity() {
 
         val retrofit = Retrofit.Builder()
             //서버에 맞게 주소를 계속 변경해 줌
-            .baseUrl("http://13.125.27.159:8000")
+            .baseUrl("http://3.38.98.137:8000")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

@@ -3,7 +3,6 @@ package com.example.fuzzbuzz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import com.amazonaws.mobile.client.AWSMobileClient
 import kotlinx.android.synthetic.main.activity_settings.*
 
@@ -25,9 +24,12 @@ class Settings : AppCompatActivity() {
             startActivity(logout)
         }
 
-        
+        // 코로나 19 정보 확인 뷰페이저로 이동
+        covid.setOnClickListener{
+            val covid = Intent(this,Covid::class.java)
+            startActivity(covid)
+        }
+
     }
-
-
 
 }

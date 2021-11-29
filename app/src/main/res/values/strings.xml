@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">FuzzBuzz</string>
+
+    <string name="Main">Main</string>
+    <string name="Congestion">혼잡도</string>
+    <string name="Information">Info</string>
+    <string name="QA">Q&amp;A</string>
+    <string name="Settings">설정</string>
+
+
+    <string name="Thisplace">이 곳의 혼잡도는</string>
+    <string name="Zero">0000</string>
+    <string name="Is">입니다.</string>
+    <string name="Free">여유</string>
+    <string name="Normal">보통</string>
+    <string name="Many">혼잡</string>
+
+    <string name="Mypage">MyPage</string>
+    <string name="Id">ID</string>
+    <string name="Username">username</string>
+    <string name="Logout">로그아웃</string>
+    <string name="covid">코로나 19</string>
 </resources>

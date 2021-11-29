@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fuzzbuzz" >
+    package="com.example.fuzzbuzz">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FuzzBuzz"
-        android:usesCleartextTraffic="true" >
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Covid"
+            android:exported="true" />
         <activity
             android:name=".Chart"
             android:exported="true" />
@@ -45,12 +48,8 @@
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".Graph"
-            android:exported="true"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".Aws"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,9 +59,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-        <activity
-            android:name=".Web"
-            android:exported="true" />
+        <service android:name=".MyJobService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"></service>
     </application>
 
 </manifest>

@@ -4,20 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_aws.xml" value="0.1" />
-        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_chart.xml" value="0.1" />
+        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_chart.xml" value="0.165" />
         <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_congestion.xml" value="0.25" />
+        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_covid.xml" value="0.165" />
         <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_graph.xml" value="0.335" />
-        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_number1.xml" value="0.25" />
-        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_number2.xml" value="0.24114583333333334" />
-        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_number3.xml" value="0.24114583333333334" />
-        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_number4.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_number2.xml" value="0.25" />
+        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_number3.xml" value="0.25" />
+        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_number4.xml" value="0.25" />
         <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_qa.xml" value="0.25" />
         <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_restapi.xml" value="0.24114583333333334" />
-        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_settings.xml" value="0.1" />
+        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_settings.xml" value="0.25" />
         <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/activity_web.xml" value="0.10625" />
         <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/acvitivy_webview.xml" value="0.1" />
+        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/fragment_home.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/layout/network_security_config.xml" value="0.1" />
+        <entry key="..\:/Users/ksong/AndroidStudioProjects/FuzzBuzz/app/src/main/res/menu/navi_menu.xml" value="0.335" />
       </map>
     </option>
   </component>

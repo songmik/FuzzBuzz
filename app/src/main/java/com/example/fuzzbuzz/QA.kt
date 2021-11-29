@@ -24,11 +24,13 @@ class QA : AppCompatActivity() {
 
         val retrofit = Retrofit.Builder()
                 //서버에 맞게 주소를 계속 변경해 줌
-            .baseUrl("http://13.125.27.159:8000")
+            .baseUrl("http://3.38.98.137:8000")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
         val service = retrofit.create(Service::class.java)
+
+        // 질문 4개를 REST API로 받아오기 위한 코드
 
         service.getObject("1")?.enqueue(object:Callback<Response>{
             override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
@@ -50,7 +52,7 @@ class QA : AppCompatActivity() {
             }
         })
 
-        service.getObject("4").enqueue(object:Callback<Response>{
+        service.getObject("3").enqueue(object:Callback<Response>{
             override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
                 val qtext = response.body()?.Q_text
                 textView11.text = qtext.toString()
@@ -60,7 +62,7 @@ class QA : AppCompatActivity() {
             }
         })
 
-        service.getObject("5").enqueue(object:Callback<Response>{
+        service.getObject("4").enqueue(object:Callback<Response>{
             override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
                 val qtext = response.body()?.Q_text
                 textView12.text = qtext.toString()
@@ -78,18 +80,18 @@ class QA : AppCompatActivity() {
         }
 
         textView10.setOnClickListener{
-            val text1 = Intent(this, number2::class.java)
-            startActivity(text1)
+            val text2 = Intent(this, number2::class.java)
+            startActivity(text2)
         }
 
         textView11.setOnClickListener{
-            val text1 = Intent(this, number3::class.java)
-            startActivity(text1)
+            val text3 = Intent(this, number3::class.java)
+            startActivity(text3)
         }
 
         textView12.setOnClickListener{
-            val text1 = Intent(this, number4::class.java)
-            startActivity(text1)
+            val text4 = Intent(this, number4::class.java)
+            startActivity(text4)
         }
 
     }

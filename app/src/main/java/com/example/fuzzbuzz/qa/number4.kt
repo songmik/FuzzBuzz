@@ -21,13 +21,13 @@ class number4 : AppCompatActivity() {
 
         val retrofit = Retrofit.Builder()
             //서버에 맞게 주소를 계속 변경해 줌
-            .baseUrl("http://13.125.27.159:8000")
+            .baseUrl("http://3.38.98.137:8000")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
         val service = retrofit.create(Service::class.java)
 
-        service.getObject("5")?.enqueue(object: Callback<Response> {
+        service.getObject("4")?.enqueue(object: Callback<Response> {
             override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
                 val qtext = response.body()?.Q_text
                 val atext = response.body()?.A_text

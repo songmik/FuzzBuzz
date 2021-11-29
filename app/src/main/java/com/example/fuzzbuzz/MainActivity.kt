@@ -3,9 +3,15 @@ package com.example.fuzzbuzz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.MenuItem
+import android.view.View
+import androidx.fragment.app.FragmentTransaction
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -28,7 +34,9 @@ class MainActivity : AppCompatActivity() {
         button4.setOnClickListener {
             val settings = Intent(this, Settings::class.java)
             startActivity(settings)
-        }
+            }
 
     }
+
 }
+
